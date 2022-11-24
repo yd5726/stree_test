@@ -6,8 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/layout">
     <TextView
+        android:id="@+id/title_tv"
         android:layout_margin="20dp"
         android:textStyle="bold"
         android:textColor="#111"
@@ -37,11 +39,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:id="@+id/coke_qty_tv"
                 android:layout_gravity="center"
                 android:text="10개 남음"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/coke_order_btn"
                 android:layout_gravity="center"
                 android:text="주문 하기"
                 android:layout_width="wrap_content"
@@ -64,11 +68,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:id="@+id/soda_qty_tv"
                 android:layout_gravity="center"
                 android:text="10개 남음"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/soda_order_btn"
                 android:layout_gravity="center"
                 android:text="주문 하기"
                 android:layout_width="wrap_content"
@@ -96,11 +102,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:id="@+id/fanta_qty_tv"
                 android:layout_gravity="center"
                 android:text="0개 남음"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/fanta_order_btn"
                 android:layout_gravity="center"
                 android:text="주문 하기"
                 android:layout_width="wrap_content"
@@ -123,11 +131,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:id="@+id/demisoda_qty_tv"
                 android:layout_gravity="center"
                 android:text="10개 남음"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
+                android:id="@+id/demisoda_order_btn"
                 android:layout_gravity="center"
                 android:text="주문 하기"
                 android:layout_width="wrap_content"
@@ -143,13 +153,17 @@
             android:layout_weight="2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
             <EditText
+                android:id="@+id/input_money_edt"
                 android:hint="금액을 입력하세요."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:text="잔액 : 10000원"
+                android:id="@+id/input_money_tv"
+                android:text="잔액 : 0원"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -159,12 +173,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <Button
+                android:id="@+id/input_money_btn"
                 android:text="금액 입력"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
         </LinearLayout>
     </LinearLayout>
     <Button
+        android:id="@+id/changes_return"
         android:layout_margin="10dp"
         android:text="잔돈 반환"
         android:layout_width="match_parent"
